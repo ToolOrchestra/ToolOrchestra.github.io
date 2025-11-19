@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="One embedder for all tasks">
+  <meta name="keywords" content="Embedder, encoder">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/lib/codemirror.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/addon/runmode/runmode-standalone.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/mode/python/python.min.js"></script>
+
+  <title>ToolOrchestra</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://hongjin-su.github.io/">Hongjin Su*</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="hhttps://shizhediao.github.io/">Shizhe Diao*</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://gloriaximinglu.github.io/">Ximing Lu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://research.nvidia.com/person/mingjie-liu">Mingjie Liu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://jiacheng-xu.github.io/">Jiacheng Xu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://simonxin.com/">Xin Dong</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.yongganfu.com/">Yonggan Fu</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://pbelcak.com/">Peter Belcak</a>,<sup>1</sup>
+            </span><br>
+            <span class="author-block">
+              <a href="https://sites.google.com/site/yhrspace/">Hanrong Ye</a>,<sup>1</sup><sup>3</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://hongxu-yin.github.io/">Hongxu Yin</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/yi-dong-04057b18/">Yi Dong</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://developer.nvidia.com/blog/author/ebakhturina/">Evelina Bakhturina</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://taoyds.github.io/">Tao Yu</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://yejinc.github.io/">Yejin Choi</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://jankautz.com/">Jan Kautz</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.pmolchanov.com/">Pavlo Molchanov</a><sup>1</sup>
+            </span>
+            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Nvidia,</span>
+            <span class="author-block"><sup>2</sup>The University of Hong Kong</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://gitlab-master.nvidia.com/dler/toolorchestra"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://gitlab-master.nvidia.com/dler/toolorchestra"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://gitlab-master.nvidia.com/dler/toolorchestra"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Checkpoint</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://gitlab-master.nvidia.com/dler/toolorchestra"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-clone"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gif-row">
+  <img src="animation1.gif" alt="Animation 1">
+  <img src="animation2.gif" alt="Animation 2">
+</div>
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        We introduce ToolOrchestra, a method for training small orchestrators that coordinate the use of intelligent tools. By using both tools and specialized models, ToolOrchestrator surpasses GPT-5 while is much more efficient.
+      </h2>
+      <p align="center">
+        <img src="static/images/toolorchestra.png" width="100%" align="middle" class="center"/> <!-- To .gif format-->
+      </p>
+
+    </div>
+  </div>
+</section>
+  
+ <section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large language models are powerful generalists, yet solving deep and complex problems such as those of the Humanity’s Last Exam (HLE) remains both conceptually challenging and computationally expensive. We show that small orchestrators managing other models and a variety of tools are able to both push the upper bound of intelligence and improve efficiency in solving difficult agentic tasks. We introduce ToolOrchestra, a method for training small orchestrators that coordinate the use of intelligent tools. ToolOrchestra makes explicit use of reinforcement learning with outcome-, efficiency-, and user-preference-aware rewards. Using ToolOrchestra, we produce Orchestrator, an 8B model that achieves higher accuracy at lower cost than previous tool-use agents while aligning with user preferences on which tools are to be used for a given query. On HLE, Orchestrator achieves a score of 37.1%, outperforming GPT-5 (35.1%) while being 2.5x more efficient. On τ 2-Bench and FRAMES, Orchestrator surpasses GPT-5 by a wide margin while using only about 30% of the cost. Extensive analysis shows that Orchestrator achieves the best trade-off between performance and cost under multiple metrics, and generalizes robustly to previously unseen tools. These results demonstrate that composing diverse tools with a lightweight orchestration model is both more efficient and more effective than existing methods, paving the way for practical and scalable tool-augmented reasoning systems.
+          </p>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Main Results</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/main_results.png" class="center">
+          <p>
+            Basic tools refer to search, code interpreter and python functions. ToolOrchestra coordinate a diverse set of tools and achieves superior performance over GPT-5 at much lower cost.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--/ Results. -->
+
+</section>
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Analysis</h2>
+        <div class="content has-text-justified">
+          <p>
+            Further, Orchestrator-8B invokes a diverse set of tools and does not exihibit strong biases. 
+          </p>
+        <img src="static/images/tool_distribute.png" class="center">
+          <p>
+            In addition, Orchestrator-8B makes better use of compute at test time. It achieves better performance at the same cost, and reaches similar performance at lower cost.
+          </p>
+        <p align="center">
+        <img src="static/images/testtime_scale.png" class="center">
+        </p>
+          <p>
+            With unseen tools, Orchestrator-8B consistently demonstrates significant improvements in both performance and cost.
+          </p>
+         <p align="center">
+        <img src="static/images/unseen_tools.png" width="600" height="150" class="center">
+           </p>
+          <p>
+            Last but not least, we calculate the preference rewards Orchestrator-8B compared to other models. The results show that Orchestrator-8B is superior in following user instructions to use their preferred tools.
+          </p>
+        <p align="center">
+           <img src="static/images/user_preference.png" width="500" height="500" class="center"> <!-- To .gif format-->
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--/ Results. -->
+
+</section>
+
+ 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{ToolOrchestra,
+  title={ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration},
+  author={Su, Hongjin and Diao, Shizhe and Lu, Ximing and Liu, Mingjie and Xu, Jiacheng and Dong, Xin and Fu, Yonggan and Belcak, Peter and Ye, Hanrong and Yin, Hongxu and Dong, Yi and Bakhturina, Evelina and Yu, Tao and Choi, Yejin and Kautz, Jan and Molchanov, Pavlo}
+  year={2025},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
