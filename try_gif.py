@@ -84,6 +84,18 @@ def make_gif_from_folder(
 
 if __name__ == "__main__":
     # Example usage without argparse; edit values below or wrap with argparse if desired.
+    folder = "test_images1"   # change to your folder
+    output = "animation1.gif"         # change to your desired output path
+    # Either set fps (frames per second) or duration_ms (milliseconds per frame)
+    make_gif_from_folder(
+        input_dir=folder,
+        output_gif=output,
+        duration_ms=500,
+        # fps=1,             # or set duration_ms=83
+        size=(352, 371),    # set None to keep first image size; else all frames will be letterboxed to this size
+        loop=0,             # 0 = infinite loop; set e.g. 1 to play once
+    )
+
     folder = "test_images2"   # change to your folder
     output = "animation2.gif"         # change to your desired output path
     # Either set fps (frames per second) or duration_ms (milliseconds per frame)
@@ -92,6 +104,6 @@ if __name__ == "__main__":
         output_gif=output,
         duration_ms=500,
         # fps=1,             # or set duration_ms=83
-        size=(371, 371),    # set None to keep first image size; else all frames will be letterboxed to this size
+        size=(352, 371),    # set None to keep first image size; else all frames will be letterboxed to this size
         loop=0,             # 0 = infinite loop; set e.g. 1 to play once
     )
